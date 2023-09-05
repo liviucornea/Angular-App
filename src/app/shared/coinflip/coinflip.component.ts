@@ -21,6 +21,7 @@ export class CoinflipComponent implements OnInit {
     if (savedScore) {
       this.scoreTracker = JSON.parse(savedScore);
     }
+    console.log('coinflip component initialized');
   }
 
   public resetScore():void {
