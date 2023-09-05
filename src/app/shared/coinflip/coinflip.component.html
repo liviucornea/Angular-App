@@ -1,0 +1,23 @@
+<div class="coinflip-container">
+  <div class="coinflip-btn-container">
+    <button
+      class="coinflip-btn"
+      id="heads-choice-btn"
+      (click)="doActionType('Heads')"
+    >
+      Heads
+    </button>
+    <button
+      class="coinflip-btn"
+      id="tails-choice-btn"
+      (click)="doActionType('Tails')"
+    >
+      Tails
+    </button>
+    <button class="reset-btn" (click)="resetScore()">Reset</button>
+  </div>
+  <div>
+    <p class="coinflip-result" id="coinflip-p-result">{{ resultsOnPageMsg }}</p>
+    <p class="coinflip-score" id="coinflip-p-score">{{ scoreOnPageMsg }}</p>
+  </div>
+</div>
