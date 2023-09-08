@@ -1,0 +1,14 @@
+<div class="field">
+  <label class="label">{{ label }}</label>
+  <div class="control">
+    <input class="input" [formControl]="control" [ngClass]="{ 'if-error': showErrors()}" />
+  </div>
+  <ng-container *ngIf="showErrors()">
+    <div class="if-error" *ngIf="control.errors!['required']">
+      <p>Field Required</p>
+    </div>
+    <div class="if-error" *ngIf="control.errors!['pattern']">
+      <p>Invalid Format</p>
+    </div>
+  </ng-container>
+</div>

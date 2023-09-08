@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { IUser, USERS_LIST } from './shared/home/home.utils';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +16,6 @@ export class AppComponent {
     console.log('method navigate is invoked with parameter:', url);
     this.router.navigateByUrl(url);
   }
+
+  public userList: IUser[] = USERS_LIST
 }

@@ -3,7 +3,11 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { TodosComponent } from './todos/todos.component';
 import { TodoEditComponent } from './todo-edit/todo-edit.component';
-import { CoinflipComponent } from './coinflip/coinflip.component'
+import { CoinflipComponent } from './coinflip/coinflip.component';
+import { UserComponent } from './user/user.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { UserErrorComponent } from './user-error/user-error.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 
 
@@ -12,10 +16,14 @@ import { CoinflipComponent } from './coinflip/coinflip.component'
     HomeComponent,
     TodosComponent,
     TodoEditComponent,
-    CoinflipComponent
+    CoinflipComponent,
+    UserComponent,
+    UserErrorComponent,
+    UserListComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule
   ],
   exports: [HomeComponent, TodosComponent, CoinflipComponent]
 })

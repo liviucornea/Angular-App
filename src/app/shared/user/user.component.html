@@ -1,0 +1,24 @@
+<hr>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <!-- (ngSubmit)="onSubmit() -->
+  <!-- <label for="firstName">First Name</label> -->
+  <app-user-error label="First Name" [control]="userForm.get('firstName')"></app-user-error>
+  <!-- <label for="lastName">Last Name</label> -->
+  <app-user-error label="Last Name" [control]="userForm.controls['lastName']"></app-user-error>
+  <!--  <label for="email">Email</label> -->
+  <app-user-error label="Email" [control]="userForm.controls['email']"></app-user-error>
+  <!-- <label for="salary">Salary</label> -->
+  <app-user-error label="Salary" [control]="userForm.controls['salary']"></app-user-error>
+  <!-- <label for="dateOfBirth">Salary</label> -->
+  <app-user-error label="Date of Birth DD/MM/YYYY" [control]="userForm.controls['dateOfBirth']"></app-user-error>
+  <div class="btn">
+    <button type="button" (click)="resetOnClick()">RESET</button>
+    <button [disabled]="userForm.invalid" type="submit">SUBMIT</button>
+    <button type="button" (click)='saveOnClick()'>SAVE</button>
+  </div>
+</form>
+<hr>
+<div>Form Contents: {{ userForm.value | json }}</div>
+<div>Form is valid: {{ userForm.valid }}</div>
+<!-- <div>Errors around name: {{ userForm.controls.firstName.errors | json }}</div> -->
+<!-- <div>Errors around namE: {{ userForm.get('firstName').errors | json }}</div> -->

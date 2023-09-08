@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+label,
+button {
+  margin-top: 20px;
+}
+
+button {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Oswald';
+  padding: 13px 25px;
+  font-size: 18px;
+  background-color: whitesmoke;
+  color: black;
+  border-color: white;
+  cursor: pointer;
+  border: 1px solid black
+}
+
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+  border: 1px solid whitesmoke ;
+}
+
+

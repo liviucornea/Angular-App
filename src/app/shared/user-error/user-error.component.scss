@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-family: 'Oswald';
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+}
+
+input {
+  letter-spacing: -1px;
+  font-family: 'Poppins';
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+p {
+  font-family: 'Oswald';
+  margin-top: 9px;
+  font-size: 16px;
+}
+
+.if-error {
+  p {
+    color: red;
+  }
+  input {
+    border: 1px solid red;
+  }
+}

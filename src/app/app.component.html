@@ -84,9 +84,18 @@
       <!-- <span>Coin flip</span> -->
       <button (click)="navigateByUrl('/coinflip')">coin flip</button>
     </div>
+    <div class="menu-item">
+      <button (click)="navigateByUrl('/user')">user</button>
+    </div>
   </div>
 
+  <!--   user-list
+  <div *ngFor="let user of userList">
+    <span>Nume complet: {{ user.firstName }} {{ user.lastName }} </span>
+  </div> -->
+
   <router-outlet></router-outlet>
+
   <!-- Footer -->
   <footer>
     <div>section of footor to be developed</div>
